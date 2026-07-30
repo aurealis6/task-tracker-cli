@@ -13,7 +13,7 @@ Repository: https://github.com/aurealis6/task-tracker-cli
 - List all tasks
 - List tasks filtered by status (`todo`, `in-progress`, `done`)
 - Tasks persist between runs in a `tasks.json` file
-- Graceful error handling for invalid task IDs and malformed commands
+- Error handling for invalid task IDs and malformed commands
 
 ## Requirements
 
@@ -76,8 +76,8 @@ Each task stored in `tasks.json` has the following properties:
 ```
 src/
 ├── Main.java        # Entry point; parses commands and dispatches actions
-├── Task.java         # Task data model
-└── TaskStore.java     # Handles reading/writing tasks.json (hand-written JSON serialization)
+├── Task.java        # Task data model
+└── TaskStore.java   # Handles reading/writing tasks.json (hand-written JSON serialization)
 ```
 
 ## Notes
